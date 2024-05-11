@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Main--page {
+  display: flex;
+}
+
+.header {
+  flex: 0.26;
+}
+
+.toggle-button {
+  display: none;
+}
+
+.main {
+  flex: 1;
+}
+
+.profile--content {
+  flex: 1;
+}
+
+.lists--page {
+  flex: 1;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #41ace1;
+  padding: 25px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.content--basement {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  flex: 0.1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title img {
+  width: 49px;
+}
+
+.links {
+  flex: 0.9;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 500;
+}
+
+.stick-1 {
+  border: solid #E5E8EA 1px;
+}
+
+.stick-2 {
+  border: solid #E5E8EA 1px;
+}
+
+@media(max-width: 900px) {
+  .header {
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .outer-block-navbar {
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+
+  .toggle-button {
+    display: block;
+  }
+
+  .toggle-button img {
+    position: relative;
+  }
+
+  .header .navbar--menu {
+    justify-content: center;
+    margin-top: 0;
+    margin-right: 15px;
+    padding-left: 15px;
+  }
+
+  .link:hover {
+    box-shadow: 0 0 1.5px rgb(255, 255, 255) !important;
+    background-color: none !important;
+    border-radius: 30px !important;
+  }
+
+  .img-l {
+    transition: 0.4s;
+  }
+
+  .img-l:hover {
+    box-shadow: 0 0 1.5px rgb(241, 241, 241);
+    background-color: rgb(241, 241, 241);
+    border-radius: 30px;
+  }
+
+  .name-l {
+    display: none !important;
+    height: 0 !important;
+    width: 0 !important;
+  }
+
+  .name-l h4 {
+    font-size: 0 !important;
+  }
+
+  .post--but {
+    display: flex;
+    width: 100%;
+  }
+
+  .post--but button {
+    margin: auto;
+    width: 80% !important;
+    font-size: 15px !important;
+    margin-top: 0 !important;
+  }
+
+  .post--but button:hover {
+    border: 2px solid #007ebc !important;
+  }
+
+  .ul_more {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .li-common {
+    display: flex;
+    flex-direction: column-reverse !important;
+    padding: 0 0 0 0 !important;
+  }
+
+  .ul_more li a {
+    font-size: 16px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    ;
+    padding: 2px 10px !important;
+
+  }
+
+  .ul_more li a:hover {
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 1px 1.5px rgb(90, 180, 240), 0 1px 1.5px rgb(90, 180, 240), 0 2px 1.5px rgb(90, 180, 240);
+    border-radius: 22px;
+  }
+
+  .profile-img img {
+    width: 130px !important;
+  }
+
+  .back-block {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0 !important;
+    padding-right: 15px;
+  }
+
+  .type-name h4 {
+    font-size: 16.5px !important;
+  }
+
+  .type-name h5 {
+    font-size: 14px !important;
+  }
+
+  .type-account img {
+    width: 85px !important;
+  }
+}
+
+@media(max-width: 540px) {
+
+  .Main--page {
+    gap: 0;
+  }
+
+  .main .post--content .user--postbutton {
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: center;
+  }
+
+
+  .user--postbutton .post-button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 30px !important;
+    margin-left: 0 !important;
+    top: 0;
+  }
+
+  .post-button button {
+    width: 35% !important;
+  }
+
+  .profile-links {
+    flex-direction: column;
+    width: 55%;
+  }
+
+  .profile-links a {
+    width: 220px;
+  }
+
+  .profile-links a p {
+    font-size: 15px;
+  }
+
+  .profile-img img {
+    width: 125px !important;
+  }
+
+  .button-edit-profile {
+    width: 95% !important;
+  }
+
+  .button-edit-profile button {
+    font-size: 14.5px;
+  }
+
+  .type-name h4 {
+    font-size: 16px !important;
+  }
+
+  .type-name h5 {
+    font-size: 13px !important;
+  }
+
+  .type-account img {
+    width: 80px !important;
+  }
+
+  .lists-component {
+    width: 90% !important;
+  }
+
+  .sample-name h3 {
+    font-size: 15px !important;
+  }
+
+  .outer-block-lists {
+    padding: 20px 15px 15px 15px !important;
+  }
+
+  .more-compenents {
+    margin-top: 25px !important;
+  }
+
+  .search-button {
+    width: 65% !important;
+    padding: 5px 15px 6px 20px !important;
+  }
+
+  .search-button img {
+    margin-right: 15px;
+  }
+
+  .search-button input {
+    width: 65%;
+  }
+}
+
+@media (max-width:450px) {
+  .outer-block-lists {
+    padding: 20px 10px 15px 10px !important;
+  }
+
+  .type-account img {
+    width: 70px !important;
+  }
+
+  .type-name h4 {
+    font-size: 15px !important;
+  }
+
+  .type-name h5 {
+    font-size: 12px !important;
+  }
+  .button-showmore{
+    margin-left: 5px;
+  }
+}
